@@ -12,6 +12,7 @@ import InterestedEvents from './MyEvents/InterestedEvents.js';
 import Calendar from "./Calendar/Calendar.js";
 import EventInfo from "./ExploreEvents/EventInfo/EventInfo.js";
 import AdminPage from './AdminPage/AdminPage.js'
+import HomeScreen from "./HomeScreen.js";
 const RoutesComponent = (props) => {
   // let loggedInUserDetails = JSON.parse(sessionStorage.getItem("user"));
   // let eventslist = loggedInUserDetails["eventsRegistered"]
@@ -57,6 +58,7 @@ const RoutesComponent = (props) => {
         <Route path="/login" element = {<Login/>} />
         <Route path="/signup" element = {<SignUp/>} />
         <Route path="/forgot-password" element = {<ForgotPassword/>} />
+        <Route path="/home" element = {<HomeScreen/>}/>
         </Routes>
     </Router>
     )

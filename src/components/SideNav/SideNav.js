@@ -22,7 +22,7 @@ const SideNav = (props) => {
   const signoutClick =async()=>{
     let res = await props.logout();
     if(res){
-      navigate("/login");
+      navigate("/home");
     }
   }
 
